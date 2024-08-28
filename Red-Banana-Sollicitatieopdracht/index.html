@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Red Banana</title>
+	<link rel="icon" type="image/x-icon" href="img/Red-Banana.jpg">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body class="overflow-x-hidden">
+
+	<header class="border-bottom">
+		<div class="header d-flex">
+			<a href="#"><img class="Red-Banana-logo mt-3" src="img/RedBanana-logo.png" alt="Red Banana logo"></a>
+			<section id="search-section">
+				<div class="container-fluid">
+    				<div class="container-fluid text-center outbox">
+        				<div class='row'>
+            				<div class='d-flex col-lg-8 col-md-10 col-sm-11 mx-auto mt-2'>
+                				<form class='d-flex flex-sm-row flex-column align-items-center me-5 bg-body-secondary'>
+                    				<input type="text" class='border-0 form-control h-100 mt-2 mt-sm-0 bg-body-secondary' placeholder="Waar ben je naar op zoek?">
+                    				<button class='searchbutton btn btn-danger mr-sm-1 mt-4 mt-sm-0 flex-fill'><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+  									<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+									</svg></button>
+                				</form>
+                				<div class="header-links d-flex justify-content-center mt-2 ms-5">
+									<a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-black" href="#">
+									<div class="blog">
+										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-newspaper" viewBox="0 0 16 16">
+										<path d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5z"/>
+										<path d="M2 3h10v2H2zm0 3h4v3H2zm0 4h4v1H2zm0 2h4v1H2zm5-6h2v1H7zm3 0h2v1h-2zM7 8h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2z"/>
+										</svg>
+										<p>Blog</p>
+									</div></a>
+									<a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-black" href="#">
+									<div class="account">
+										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+						  				<path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+										</svg>
+										<p>Account</p>
+									</div></a>
+									<a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-black" href="#">
+									<div class="shoppingcart">
+										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+						  				<path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+										</svg>
+										<p>Winkelwagen</p>
+									</div></a>	
+								</div>
+            				</div>
+        				</div>
+    				</div>
+				</div>
+			</section>
+		</div>
+	</header>
+
+	<nav>
+		<div class="d-flex justify-content-evenly mt-3 mb-1">
+			<h6><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-black fw-bold" href="#">
+			Apple accessoires
+			</a></h6>
+			<h6><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-black fw-bold" href="#">
+			Samsung accessoires
+			</a></h6>
+			<h6><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-black fw-bold" href="#">
+			Huawei accessoires
+			</a></h6>
+			<h6><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-black fw-bold" href="#">
+			Overige accessoires
+			</a></h6>
+			<h6><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-black fw-bold" href="#">
+			Reparatie
+			</a></h6>
+			<div class="d-flex">
+				<h6><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover me-5 text-black fw-bold" href="#">
+				Blog
+				</a></h5>
+				<h6><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-black fw-bold" href="#">
+				Contact
+				</a></h5>
+			</div>
+		</div>
+	</nav>
+
+	<main>
+
+<!-- Hero section -->
+	
+		<img src="img/Hero.png" class="hero-image position-relative img-fluid w-100" alt="Order accessories for your smartphone">
+		<h1 class="hero-text-h1 position-absolute top-50 start-0 translate-middle-y ms-5 text-white fw-bold">
+		Bestel eenvoudig de tofste accessoires voor jouw smartphone
+		</h1>
+		<p class="hero-text-p position-absolute top-50 start-0 translate-middle-y ms-5 text-white">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et dictum felis, at semper risus. Phasellus id convallis quam.
+		</p>
+		<button class='hero-btn btn btn-danger position-absolute bottom-0 start-0 mb-5 ms-5 text-white'>
+		Bekijk alle accessoires
+		</button>
+
+<!-- End hero section -->
+
+<!-- Discover section -->
+
+		<div class="discover-section">
+			<h2 class="fw-bold mb-3">Ontdek onze assortiment</h2>
+			<div class="discover-images1-2">
+				<div class="discover-image1 position-relative">
+					<figure>
+						<a href="#">
+							<img src="img/Apple-iphone-13.png" alt="Apple Iphone 13">
+							<h3 class="position-absolute bottom-0 start-0 text-white mb-5 ms-4 fw-bold">Apple Iphone 13</h3>
+						</a>
+					</figure>
+					
+				</div>
+				<div class="discover-image2 position-relative">
+					<figure>
+						<a href="#">
+							<img src="img/Samsung-galaxy-S22.png" alt="Samsung Galaxy S22">
+							<h3 class="position-absolute bottom-0 start-0 text-white mb-5 ms-4 fw-bold">Samsung Galaxy S22</h3>
+						</a>
+					</figure>
+				</div>
+			</div>
+			<div class="discover-images3-6">
+				<div class="discover-image3 position-relative">
+					<figure>
+						<a href="#">
+							<img src="img/Huawei-p30.png" alt="Huawei P30">
+							<h3 class="position-absolute bottom-0 start-0 text-white mb-5 ms-4 fw-bold">Huawei P30</h3>
+						</a>
+					</figure>
+				</div>
+				<div class="discover-image4 position-relative">
+					<figure>
+						<a href="#">
+							<img src="img/Cases.png" alt="Phone cases">
+							<h3 class="position-absolute bottom-0 start-0 text-white mb-5 ms-4 fw-bold">Telefoonhoesjes</h3>
+						</a>
+					</figure>
+				</div> 
+				<div class="discover-image5 position-relative">
+					<figure>
+						<a href="#">
+							<img src="img/Repairs.png" alt="Repairs">
+							<h3 class="position-absolute bottom-0 start-0 text-white mb-5 ms-4 fw-bold">Reparaties</h3>
+						</a>
+					</figure>
+				</div>
+				<div class="discover-image6 position-relative">
+					<figure>
+						<a href="#">
+							<img src="img/Accessories.png" alt="Accessories">
+							<h3 class="position-absolute bottom-0 start-0 text-white mb-5 ms-4 fw-bold">Overige accessoires</h3>
+						</a>
+					</figure>
+				</div>
+			</div>
+		</div>
+
+<!-- End discover section -->
+
+<!-- Swiper best selling section -->
+
+		<div class="best-selling">
+			<h2 class="fw-bold">Best verkocht</h2>
+			<swiper-container class="swiper-best-selling mb-5" init="false">
+				<swiper-slide class="mb-5">
+	  				<div class="card border-light shadow position-relative" style="width: 18rem;">
+		  				<img src="img/Purple-phone.png" class="card-img-top" alt="Purple-phone">
+		  				<a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart position-absolute top-0 end-0 bg-success-subtle rounded-5 mt-3 me-4 text-black" viewBox="0 0 16 16">
+						<path d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.6 7.6 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"/>
+						</svg></a>
+		  				<div class="card-body">
+		  					<div class="d-flex">
+		  						<img src="img/Review-stars.png" class="me-2" alt="Review stars">
+		    					<h6 class="card-title text-success"><span class="me-2 text-body-tertiary">|</span>
+		    						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+  									<path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/>
+									</svg>
+									Op voorraad
+								</h6>
+		  					</div>
+		    				<h6 class="card-text text-start mb-3">Leren hoesje met MagSafe voor iPhone 13 Pro Max</h6>
+							<div class="d-flex justify-content-between">
+								<div class="flex-column">
+									<s><h6 class="text-start">€80,00</h6></s>
+									<h5 class="fw-bold">€65,00</h5>
+								</div>
+								<a href="#" class="d-flex justify-content-center align-items-center btn btn-danger w-25">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-handbag" viewBox="0 0 16 16">
+  									<path d="M8 1a2 2 0 0 1 2 2v2H6V3a2 2 0 0 1 2-2m3 4V3a3 3 0 1 0-6 0v2H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5zm-1 1v1.5a.5.5 0 0 0 1 0V6h1.639a.5.5 0 0 1 .494.426l1.028 6.851A1.5 1.5 0 0 1 12.678 15H3.322a1.5 1.5 0 0 1-1.483-1.723l1.028-6.851A.5.5 0 0 1 3.36 6H5v1.5a.5.5 0 1 0 1 0V6z"/>
+									</svg>
+								</a>
+							</div>
+  						</div>
+					</div>
+				</swiper-slide>
+	  			<swiper-slide>
+	  				<div class="card border-light shadow position-relative" style="width: 18rem;">
+		  				<img src="img/Purple-phone.png" class="card-img-top" alt="Purple-phone">
+		  				<a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart position-absolute top-0 end-0 bg-success-subtle rounded-5 mt-3 me-4 text-black" viewBox="0 0 16 16">
+						<path d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.6 7.6 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"/>
+						</svg></a>
+		  				<div class="card-body">
+		  					<div class="d-flex">
+		  						<img src="img/Review-stars.png" class="me-2" alt="Review stars">
+		    					<h6 class="card-title text-success"><span class="me-2 text-body-tertiary">|</span>
+		    						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+  									<path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/>
+									</svg>
+									Op voorraad
+								</h6>
+		  					</div>
+		    				<h6 class="card-text text-start mb-3">Leren hoesje met MagSafe voor iPhone 13 Pro Max</h6>
+							<div class="d-flex justify-content-between">
+								<div class="flex-column">
+									<s><h6 class="text-start">€80,00</h6></s>
+									<h5 class="fw-bold">€65,00</h5>
+								</div>
+								<a href="#" class="d-flex justify-content-center align-items-center btn btn-danger w-25">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-handbag" viewBox="0 0 16 16">
+  									<path d="M8 1a2 2 0 0 1 2 2v2H6V3a2 2 0 0 1 2-2m3 4V3a3 3 0 1 0-6 0v2H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5zm-1 1v1.5a.5.5 0 0 0 1 0V6h1.639a.5.5 0 0 1 .494.426l1.028 6.851A1.5 1.5 0 0 1 12.678 15H3.322a1.5 1.5 0 0 1-1.483-1.723l1.028-6.851A.5.5 0 0 1 3.36 6H5v1.5a.5.5 0 1 0 1 0V6z"/>
+									</svg>
+								</a>
+							</div>
+  						</div>
+					</div>
+				</swiper-slide>
+	  			<swiper-slide>
+	  				<div class="card border-light shadow position-relative" style="width: 18rem;">
+		  				<img src="img/Purple-phone.png" class="card-img-top" alt="Purple-phone">
+		  				<a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart position-absolute top-0 end-0 bg-success-subtle rounded-5 mt-3 me-4 text-black" viewBox="0 0 16 16">
+						<path d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.6 7.6 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"/>
+						</svg></a>
+		  				<div class="card-body">
+		  					<div class="d-flex">
+		  						<img src="img/Review-stars.png" class="me-2" alt="Review stars">
+		    					<h6 class="card-title text-success"><span class="me-2 text-body-tertiary">|</span>
+		    						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+  									<path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/>
+									</svg>
+									Op voorraad
+								</h6>
+		  					</div>
+		    				<h6 class="card-text text-start mb-3">Leren hoesje met MagSafe voor iPhone 13 Pro Max</h6>
+							<div class="d-flex justify-content-between">
+								<div class="flex-column">
+									<s><h6 class="text-start">€80,00</h6></s>
+									<h5 class="fw-bold">€65,00</h5>
+								</div>
+								<a href="#" class="d-flex justify-content-center align-items-center btn btn-danger w-25">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-handbag" viewBox="0 0 16 16">
+  									<path d="M8 1a2 2 0 0 1 2 2v2H6V3a2 2 0 0 1 2-2m3 4V3a3 3 0 1 0-6 0v2H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5zm-1 1v1.5a.5.5 0 0 0 1 0V6h1.639a.5.5 0 0 1 .494.426l1.028 6.851A1.5 1.5 0 0 1 12.678 15H3.322a1.5 1.5 0 0 1-1.483-1.723l1.028-6.851A.5.5 0 0 1 3.36 6H5v1.5a.5.5 0 1 0 1 0V6z"/>
+									</svg>
+								</a>
+							</div>
+  						</div>
+					</div>
+				</swiper-slide>
+	  			<swiper-slide>
+	  				<div class="card border-light shadow position-relative" style="width: 18rem;">
+		  				<img src="img/Purple-phone.png" class="card-img-top" alt="Purple-phone">
+		  				<a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart position-absolute top-0 end-0 bg-success-subtle rounded-5 mt-3 me-4 text-black" viewBox="0 0 16 16">
+						<path d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.6 7.6 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"/>
+						</svg></a>
+		  				<div class="card-body">
+		  					<div class="d-flex">
+		  						<img src="img/Review-stars.png" class="me-2" alt="Review stars">
+		    					<h6 class="card-title text-success"><span class="me-2 text-body-tertiary">|</span>
+		    						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+  									<path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/>
+									</svg>
+									Op voorraad
+								</h6>
+		  					</div>
+		    				<h6 class="card-text text-start mb-3">Leren hoesje met MagSafe voor iPhone 13 Pro Max</h6>
+							<div class="d-flex justify-content-between">
+								<div class="flex-column">
+									<s><h6 class="text-start">€80,00</h6></s>
+									<h5 class="fw-bold">€65,00</h5>
+								</div>
+								<a href="#" class="d-flex justify-content-center align-items-center btn btn-danger w-25">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-handbag" viewBox="0 0 16 16">
+  									<path d="M8 1a2 2 0 0 1 2 2v2H6V3a2 2 0 0 1 2-2m3 4V3a3 3 0 1 0-6 0v2H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5zm-1 1v1.5a.5.5 0 0 0 1 0V6h1.639a.5.5 0 0 1 .494.426l1.028 6.851A1.5 1.5 0 0 1 12.678 15H3.322a1.5 1.5 0 0 1-1.483-1.723l1.028-6.851A.5.5 0 0 1 3.36 6H5v1.5a.5.5 0 1 0 1 0V6z"/>
+									</svg>
+								</a>
+							</div>
+  						</div>
+					</div>
+				</swiper-slide>
+	  			<swiper-slide>
+	  				<div class="card border-light shadow position-relative" style="width: 18rem;">
+		  				<img src="img/Purple-phone.png" class="card-img-top" alt="Purple-phone">
+		  				<a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart position-absolute top-0 end-0 bg-success-subtle rounded-5 mt-3 me-4 text-black" viewBox="0 0 16 16">
+						<path d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.6 7.6 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"/>
+						</svg></a>
+		  				<div class="card-body">
+		  					<div class="d-flex">
+		  						<img src="img/Review-stars.png" class="me-2" alt="Review stars">
+		    					<h6 class="card-title text-success"><span class="me-2 text-body-tertiary">|</span>
+		    						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+  									<path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/>
+									</svg>
+									Op voorraad
+								</h6>
+		  					</div>
+		    				<h6 class="card-text text-start mb-3">Leren hoesje met MagSafe voor iPhone 13 Pro Max</h6>
+							<div class="d-flex justify-content-between">
+								<div class="flex-column">
+									<s><h6 class="text-start">€80,00</h6></s>
+									<h5 class="fw-bold">€65,00</h5>
+								</div>
+								<a href="#" class="d-flex justify-content-center align-items-center btn btn-danger w-25">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-handbag" viewBox="0 0 16 16">
+  									<path d="M8 1a2 2 0 0 1 2 2v2H6V3a2 2 0 0 1 2-2m3 4V3a3 3 0 1 0-6 0v2H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5zm-1 1v1.5a.5.5 0 0 0 1 0V6h1.639a.5.5 0 0 1 .494.426l1.028 6.851A1.5 1.5 0 0 1 12.678 15H3.322a1.5 1.5 0 0 1-1.483-1.723l1.028-6.851A.5.5 0 0 1 3.36 6H5v1.5a.5.5 0 1 0 1 0V6z"/>
+									</svg>
+								</a>
+							</div>
+  						</div>
+					</div>
+				</swiper-slide>
+				<swiper-slide>
+	  				<div class="card border-light shadow position-relative" style="width: 18rem;">
+		  				<img src="img/Purple-phone.png" class="card-img-top" alt="Purple-phone">
+		  				<a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart position-absolute top-0 end-0 bg-success-subtle rounded-5 mt-3 me-4 text-black" viewBox="0 0 16 16">
+						<path d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.6 7.6 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"/>
+						</svg></a>
+		  				<div class="card-body">
+		  					<div class="d-flex">
+		  						<img src="img/Review-stars.png" class="me-2" alt="Review stars">
+		    					<h6 class="card-title text-success"><span class="me-2 text-body-tertiary">|</span>
+		    						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+  									<path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/>
+									</svg>
+									Op voorraad
+								</h6>
+		  					</div>
+		    				<h6 class="card-text text-start mb-3">Leren hoesje met MagSafe voor iPhone 13 Pro Max</h6>
+							<div class="d-flex justify-content-between">
+								<div class="flex-column">
+									<s><h6 class="text-start">€80,00</h6></s>
+									<h5 class="fw-bold">€65,00</h5>
+								</div>
+								<a href="#" class="d-flex justify-content-center align-items-center btn btn-danger w-25">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-handbag" viewBox="0 0 16 16">
+  									<path d="M8 1a2 2 0 0 1 2 2v2H6V3a2 2 0 0 1 2-2m3 4V3a3 3 0 1 0-6 0v2H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5zm-1 1v1.5a.5.5 0 0 0 1 0V6h1.639a.5.5 0 0 1 .494.426l1.028 6.851A1.5 1.5 0 0 1 12.678 15H3.322a1.5 1.5 0 0 1-1.483-1.723l1.028-6.851A.5.5 0 0 1 3.36 6H5v1.5a.5.5 0 1 0 1 0V6z"/>
+									</svg>
+								</a>
+							</div>
+  						</div>
+					</div>
+				</swiper-slide>
+				<swiper-slide>
+	  				<div class="card border-light shadow position-relative" style="width: 18rem;">
+		  				<img src="img/Purple-phone.png" class="card-img-top" alt="Purple-phone">
+		  				<a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart position-absolute top-0 end-0 bg-success-subtle rounded-5 mt-3 me-4 text-black" viewBox="0 0 16 16">
+						<path d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.6 7.6 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"/>
+						</svg></a>
+		  				<div class="card-body">
+		  					<div class="d-flex">
+		  						<img src="img/Review-stars.png" class="me-2" alt="Review stars">
+		    					<h6 class="card-title text-success"><span class="me-2 text-body-tertiary">|</span>
+		    						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+  									<path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/>
+									</svg>
+									Op voorraad
+								</h6>
+		  					</div>
+		    				<h6 class="card-text text-start mb-3">Leren hoesje met MagSafe voor iPhone 13 Pro Max</h6>
+							<div class="d-flex justify-content-between">
+								<div class="flex-column">
+									<s><h6 class="text-start">€80,00</h6></s>
+									<h5 class="fw-bold">€65,00</h5>
+								</div>
+								<a href="#" class="d-flex justify-content-center align-items-center btn btn-danger w-25">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-handbag" viewBox="0 0 16 16">
+  									<path d="M8 1a2 2 0 0 1 2 2v2H6V3a2 2 0 0 1 2-2m3 4V3a3 3 0 1 0-6 0v2H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5zm-1 1v1.5a.5.5 0 0 0 1 0V6h1.639a.5.5 0 0 1 .494.426l1.028 6.851A1.5 1.5 0 0 1 12.678 15H3.322a1.5 1.5 0 0 1-1.483-1.723l1.028-6.851A.5.5 0 0 1 3.36 6H5v1.5a.5.5 0 1 0 1 0V6z"/>
+									</svg>
+								</a>
+							</div>
+  						</div>
+					</div>
+				</swiper-slide>
+			</swiper-container>
+			<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+			<script>
+			    const swiperBestSelling = document.querySelector('.swiper-best-selling')
+		    	Object.assign(swiperBestSelling, {
+			      slidesPerView: 1,
+			      spaceBetween: 10,
+			      scrollbar: true,
+			      breakpoints: {
+			        "@0.00": {
+			          slidesPerView: 1,
+			          spaceBetween: 10,
+			        },
+			        "@0.75": {
+			          slidesPerView: 2,
+			          spaceBetween: 20,
+			        },
+			        "@1.00": {
+			          slidesPerView: 3,
+			          spaceBetween: 40,
+			        },
+			        "@1.50": {
+			          slidesPerView: 4,
+			          spaceBetween: 50,
+			        },
+			      },
+			    });
+			    swiperBestSelling.initialize();
+		  	</script>
+		</div>
+
+<!-- End swiper best selling section -->
+
+<!-- Customer rating total score section -->
+
+	<div class="d-flex justify-content-center">
+		<div class="webwinkel-trustmark-card card d-flex align-items-center" style="width: 18rem;">
+			<h4 class="total-score-title card-title mt-5">Dit zeggen onze klanten</h4>
+			<div class="card-body mb-5">
+				<div class="d-flex justify-content-between">
+					<div class="flex-column">
+						<img src="img/Webwinkel.png" class="me-2 mt-1 w-75" alt="Webwinkel trustmark">
+						<img src="img/Review-stars.png" class="me-2 mt-1 w-75" alt="Review stars">
+					</div>
+					<button class="btn btn-danger w-100"><h4 class="fw-bold">9,6</h4></button>
+				</div>
+			</div>
+			<a class="card-text link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-black mb-4" href="#">
+			Alle beoordelingen
+			</a>
+		</div>
+	</div>
+
+<!-- End customer rating total score section -->
+
+<!-- Swiper customer rating section -->
+
+		<swiper-container class="swiper-customer-rating mb-5 mt-3" init="false">
+			<swiper-slide class="mb-5">
+  				<div class="card border-light shadow text-start" style="width: 18rem;">
+				  	<img src="img/Review-stars.png" class="card-img-top w-50 mt-4 ms-4 mb-2" alt="Review stars">
+			    	<p class="card-text ms-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris efficitur, ligula eu imperdiet maximus, elit nulla eleifend risus, vitae ullamcorper lacus lorem sed diam. Pellentesque a euismod lectus.
+			    	</p>
+			    	<h6 class="card-text ms-4 mb-5 fw-bold">John Doe, Roosendaal</h6>
+				</div>
+			</swiper-slide>
+			<swiper-slide class="mb-5">
+  				<div class="card border-light shadow text-start" style="width: 18rem;">
+				  	<img src="img/Review-stars.png" class="card-img-top w-50 mt-4 ms-4 mb-2" alt="Review stars">
+			    	<p class="card-text ms-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris efficitur, ligula eu imperdiet maximus, elit nulla eleifend risus, vitae ullamcorper lacus lorem sed diam. Pellentesque a euismod lectus.
+			    	</p>
+			    	<h6 class="card-text ms-4 mb-5 fw-bold">John Doe, Roosendaal</h6>
+				</div>
+			</swiper-slide>
+			<swiper-slide class="mb-5">
+  				<div class="card border-light shadow text-start" style="width: 18rem;">
+				  	<img src="img/Review-stars.png" class="card-img-top w-50 mt-4 ms-4 mb-2" alt="Review stars">
+			    	<p class="card-text ms-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris efficitur, ligula eu imperdiet maximus, elit nulla eleifend risus, vitae ullamcorper lacus lorem sed diam. Pellentesque a euismod lectus.
+			    	</p>
+			    	<h6 class="card-text ms-4 mb-5 fw-bold">John Doe, Roosendaal</h6>
+				</div>
+			</swiper-slide>
+			<swiper-slide class="mb-5">
+  				<div class="card border-light shadow text-start" style="width: 18rem;">
+				  	<img src="img/Review-stars.png" class="card-img-top w-50 mt-4 ms-4 mb-2" alt="Review stars">
+			    	<p class="card-text ms-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris efficitur, ligula eu imperdiet maximus, elit nulla eleifend risus, vitae ullamcorper lacus lorem sed diam. Pellentesque a euismod lectus.
+			    	</p>
+			    	<h6 class="card-text ms-4 mb-5 fw-bold">John Doe, Roosendaal</h6>
+				</div>
+			</swiper-slide>
+			<swiper-slide class="mb-5">
+  				<div class="card border-light shadow text-start" style="width: 18rem;">
+				  	<img src="img/Review-stars.png" class="card-img-top w-50 mt-4 ms-4 mb-2" alt="Review stars">
+			    	<p class="card-text ms-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris efficitur, ligula eu imperdiet maximus, elit nulla eleifend risus, vitae ullamcorper lacus lorem sed diam. Pellentesque a euismod lectus.
+			    	</p>
+			    	<h6 class="card-text ms-4 mb-5 fw-bold">John Doe, Roosendaal</h6>
+				</div>
+			</swiper-slide>
+			<swiper-slide class="mb-5">
+  				<div class="card border-light shadow text-start" style="width: 18rem;">
+				  	<img src="img/Review-stars.png" class="card-img-top w-50 mt-4 ms-4 mb-2" alt="Review stars">
+			    	<p class="card-text ms-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris efficitur, ligula eu imperdiet maximus, elit nulla eleifend risus, vitae ullamcorper lacus lorem sed diam. Pellentesque a euismod lectus.
+			    	</p>
+			    	<h6 class="card-text ms-4 mb-5 fw-bold">John Doe, Roosendaal</h6>
+				</div>
+			</swiper-slide>
+			<swiper-slide class="mb-5">
+  				<div class="card border-light shadow text-start" style="width: 18rem;">
+				  	<img src="img/Review-stars.png" class="card-img-top w-50 mt-4 ms-4 mb-2" alt="Review stars">
+			    	<p class="card-text ms-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris efficitur, ligula eu imperdiet maximus, elit nulla eleifend risus, vitae ullamcorper lacus lorem sed diam. Pellentesque a euismod lectus.
+			    	</p>
+			    	<h6 class="card-text ms-4 mb-5 fw-bold">John Doe, Roosendaal</h6>
+				</div>
+			</swiper-slide>
+			<swiper-slide class="mb-5">
+  				<div class="card border-light shadow text-start" style="width: 18rem;">
+				  	<img src="img/Review-stars.png" class="card-img-top w-50 mt-4 ms-4 mb-2" alt="Review stars">
+			    	<p class="card-text ms-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris efficitur, ligula eu imperdiet maximus, elit nulla eleifend risus, vitae ullamcorper lacus lorem sed diam. Pellentesque a euismod lectus.
+			    	</p>
+			    	<h6 class="card-text ms-4 mb-5 fw-bold">John Doe, Roosendaal</h6>
+				</div>
+			</swiper-slide>
+		</swiper-container>
+		<script>
+		    const swiperCustomerRating = document.querySelector('.swiper-customer-rating')
+	    	Object.assign(swiperCustomerRating, {
+		      slidesPerView: 1,
+		      spaceBetween: 10,
+		      scrollbar: true,
+		      breakpoints: {
+		        "@0.00": {
+		          slidesPerView: 1,
+		          spaceBetween: 10,
+		        },
+		        "@0.75": {
+		          slidesPerView: 2,
+		          spaceBetween: 20,
+		        },
+		        "@1.00": {
+		          slidesPerView: 3,
+		          spaceBetween: 40,
+		        },
+		        "@1.50": {
+		          slidesPerView: 4,
+		          spaceBetween: 50,
+		        },
+		      },
+		    });
+		    swiperCustomerRating.initialize();
+	  	</script>
+
+<!-- End swiper customer rating section -->
+
+<!-- Media block section -->
+
+		<div class="d-flex">
+			<div class="position-relative">
+				<img class="media-block-woman-image" src="img/Media-block-woman.jpg" alt="Woman looking at phone">
+				<img class="media-block-phone-image position-absolute top-50 start-100 translate-middle border border-5 border-white" src="img/Media-block-phone.jpg" alt="Phone">
+			</div>
+			<div class="media-block-text d-flex justify-content-center flex-column text-start ">
+				<h1 class="w-100 fw-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+				<h6 class="w-75 mt-2">Cras gravida pharetra libero, ut interdum turpis elementum non. Etiam euismod porta ligula eget egestas. Aenean lobortis dictum lacus et rhoncus. Maecenas molestie nisl lectus, eget vulputate tortor imperdiet in. Sed tempor bibendum dui, eget semper turpis gravida vitae.
+				</h6>
+				<h6 class="w-75 mt-3">Mauris mattis sodales rhoncus. Donec eu tellus id felis porta convallis 
+				vitae eget risus. Integer massa enim, malesuada eu tellus sit amet
+				</h6>
+				<button class='media-block-btn btn btn-danger w-25 mt-4 text-white'>
+				Call to action
+				</button>
+			</div>
+		</div>
+
+<!-- End media block section -->
+
+<!-- Swiper testshop blog section -->
+
+		<div class="testshop-blog">
+			<h2 class="fw-bold">Testshop blog</h2>
+			<swiper-container class="swiper-testshop-blog mb-5 mt-3" init="false">
+				<swiper-slide class="mb-5">
+	  				<div class="card border-light text-start">
+					  	<img src="img/Testshop-blog-phone.png" class="card-img-top w-100" alt="Testshop blog phone">
+					  	<div class="testshop-blog-card-body card-body bg-secondary-subtle">
+					  		<h6 class="card-text fw-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt lorem ac lorem rhoncus, vel sodales
+				    		</h6>
+				    		<a href="#" class="read-article link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 card-text mb-5">
+			    			Lees artikel <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+							<path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+							</svg>
+			    			</a>
+					  	</div>
+				    	
+					</div>
+				</swiper-slide>
+				<swiper-slide class="mb-5">
+	  				<div class="card border-light text-start">
+					  	<img src="img/Testshop-blog-phone.png" class="card-img-top w-100" alt="Testshop blog phone">
+					  	<div class="testshop-blog-card-body card-body bg-secondary-subtle">
+					  		<h6 class="card-text fw-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt lorem ac lorem rhoncus, vel sodales
+				    		</h6>
+				    		<a href="#" class="read-article link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 card-text mb-5">
+			    			Lees artikel <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+							<path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+							</svg>
+			    			</a>
+					  	</div>
+				    	
+					</div>
+				</swiper-slide>
+				<swiper-slide class="mb-5">
+	  				<div class="card border-light text-start">
+					  	<img src="img/Testshop-blog-phone.png" class="card-img-top w-100" alt="Testshop blog phone">
+					  	<div class="testshop-blog-card-body card-body bg-secondary-subtle">
+					  		<h6 class="card-text fw-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt lorem ac lorem rhoncus, vel sodales
+				    		</h6>
+				    		<a href="#" class="read-article link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 card-text mb-5">
+			    			Lees artikel <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+							<path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+							</svg>
+			    			</a>
+					  	</div>
+				    	
+					</div>
+				</swiper-slide>
+				<swiper-slide class="mb-5">
+	  				<div class="card border-light text-start">
+					  	<img src="img/Testshop-blog-phone.png" class="card-img-top w-100" alt="Testshop blog phone">
+					  	<div class="testshop-blog-card-body card-body bg-secondary-subtle">
+					  		<h6 class="card-text fw-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt lorem ac lorem rhoncus, vel sodales
+				    		</h6>
+				    		<a href="#" class="read-article link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 card-text mb-5">
+			    			Lees artikel <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+							<path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+							</svg>
+			    			</a>
+					  	</div>
+				    	
+					</div>
+				</swiper-slide>
+				<swiper-slide class="mb-5">
+	  				<div class="card border-light text-start">
+					  	<img src="img/Testshop-blog-phone.png" class="card-img-top w-100" alt="Testshop blog phone">
+					  	<div class="testshop-blog-card-body card-body bg-secondary-subtle">
+					  		<h6 class="card-text fw-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt lorem ac lorem rhoncus, vel sodales
+				    		</h6>
+				    		<a href="#" class="read-article link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 card-text mb-5">
+			    			Lees artikel <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+							<path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+							</svg>
+			    			</a>
+					  	</div>
+				    	
+					</div>
+				</swiper-slide>
+				<swiper-slide class="mb-5">
+	  				<div class="card border-light text-start">
+					  	<img src="img/Testshop-blog-phone.png" class="card-img-top w-100" alt="Testshop blog phone">
+					  	<div class="testshop-blog-card-body card-body bg-secondary-subtle">
+					  		<h6 class="card-text fw-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt lorem ac lorem rhoncus, vel sodales
+				    		</h6>
+				    		<a href="#" class="read-article link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 card-text mb-5">
+			    			Lees artikel <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+							<path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+							</svg>
+			    			</a>
+					  	</div>
+				    	
+					</div>
+				</swiper-slide>
+				<swiper-slide class="mb-5">
+	  				<div class="card border-light text-start">
+					  	<img src="img/Testshop-blog-phone.png" class="card-img-top w-100" alt="Testshop blog phone">
+					  	<div class="testshop-blog-card-body card-body bg-secondary-subtle">
+					  		<h6 class="card-text fw-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt lorem ac lorem rhoncus, vel sodales
+				    		</h6>
+				    		<a href="#" class="read-article link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 card-text mb-5">
+			    			Lees artikel <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+							<path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+							</svg>
+			    			</a>
+					  	</div>
+				    	
+					</div>
+				</swiper-slide>
+			</swiper-container>
+			<script>
+			    const swiperTestshopBlog = document.querySelector('.swiper-testshop-blog')
+		    	Object.assign(swiperTestshopBlog, {
+			      slidesPerView: 1,
+			      spaceBetween: 10,
+			      scrollbar: true,
+			      breakpoints: {
+			        "@0.00": {
+			          slidesPerView: 1,
+			          spaceBetween: 10,
+			        },
+			        "@0.75": {
+			          slidesPerView: 2,
+			          spaceBetween: 20,
+			        },
+			        "@1.00": {
+			          slidesPerView: 3,
+			          spaceBetween: 40,
+			        },
+			        "@1.50": {
+			          slidesPerView: 4,
+			          spaceBetween: 50,
+			        },
+			      },
+			    });
+			    swiperTestshopBlog.initialize();
+		  	</script>
+		</div>
+		
+<!-- End swiper testshop blog section -->
+	</main>
+
+	<footer class="bg-secondary-subtle">
+		<div class="footer">
+			<div class="d-flex justify-content-evenly">
+				<div class="footer-testshop">
+					<h5 class="fw-bold">Testshop</h5>
+					<div class="d-flex flex-row">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt me-2" viewBox="0 0 16 16">
+						<path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+						<path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+						</svg>
+						<div class="d-flex flex-column ms-1">
+							<h6>Borchwerf 4E</h6>
+							<h6>4704 RG Roosendaal</h6>
+						</div>
+					</div>
+					<h6>
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone me-2" viewBox="0 0 16 16">
+  					<path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+					</svg>
+					0165 - 32 78 08
+					</h6>
+					<h6>
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope me-2" viewBox="0 0 16 16">
+  					<path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+					</svg>
+					info@redbanana.nl
+					</h6>
+				</div>
+				<div class="footer-opening-hours">
+					<h5 class="fw-bold">Openingstijden</h5>
+					<div class="d-flex flex-row">
+						<div class="d-flex flex-column">
+							<h6>Maandag:</h6>
+							<h6>Dinsdag:</h6>
+							<h6>Woensdag:</h6>
+							<h6>Donderdag:</h6>
+							<h6>Vrijdag:</h6>
+							<h6>Zaterdag:</h6>
+							<h6>Zondag:</h6>
+						</div>
+						<div class="d-flex flex-column ms-4">
+							<h6>09:00-17:00</h6>
+							<h6>09:00-17:00</h6>
+							<h6>09:00-17:00</h6>
+							<h6>09:00-17:00</h6>
+							<h6>09:00-17:00</h6>
+							<h6>09:00-17:00</h6>
+							<h6>GESLOTEN</h6>
+						</div>
+					</div>
+				</div>
+				<div class="footer-customerservice">
+					<h5 class="fw-bold">Klantenservice</h5>
+					<div class="d-flex flex-row">
+						<div class="d-flex flex-column me-3">
+							<a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-black" href="#"><h6>Over Testshop</h6></a>
+							<a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-black" href="#"><h6>Verzenden & Retourneren</h6></a>
+							<a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-black" href="#"><h6>Betaalmethoden</h6></a>
+							<a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-black" href="#"><h6>Klantenservice</h6></a>
+						</div>
+						<div class="d-flex flex-column ms-5">
+							<a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-black" href="#"><h6>Disclaimer</h6></a>
+							<a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-black" href="#"><h6>Privacy Policy</h6></a>
+							<a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-black" href="#"><h6>Sitemap</h6></a>
+							<a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-black" href="#"><h6>Algemene voorwaarden</h6></a>
+						</div>
+					</div>
+				</div>
+				<div class="footer-newsletter w-25">
+					<h5 class="fw-bold">Nieuwsbrief</h5>
+					<div class="d-flex flex-column">
+						<input type="text" class='border-0 w-100 form-control mt-2 mt-sm-0' placeholder="Jouw emailadres">
+						<button class='media-block-btn btn btn-danger w-100 mt-2 text-white'>Inschrijven</button>
+						<div class="footer-trustmark d-flex flex-row">
+							<img src="img/Thuiswinkel.png" class="mt-2 me-3" alt="Thuiswinkel trustmark">
+							<img src="img/Webshop.png" class="mt-2" alt="Webshop trustmark">
+						</div>
+						<div class="footer-payment-methods d-flex flex-row mt-2">
+							<img src="img/Ideal.png" class="me-3" alt="Ideal">
+							<img src="img/Visa.png" class="me-3" alt="Visa Mastercard">
+							<img src="img/Klarna.png" class="me-3" alt="Klarna Afterpay">
+							<img src="img/Bancontact.png" class="me-3" alt="Bancontact Mister Cash">
+							<img src="img/Sofort.png" alt="Sofort Überweisung">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

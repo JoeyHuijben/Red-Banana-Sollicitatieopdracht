@@ -1,0 +1,273 @@
+@font-face{
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header, nav, main, footer {
+    font-family: Poppins;
+}
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Header and navigation section*/
+.Red-Banana-logo {
+    margin-left: 100px;
+	width: 250px;
+    height: 40px;
+}
+
+.header-links {
+    font-size: 11px;
+}
+
+.searchbutton {
+    width: 60px;
+    margin-right: 5px;
+}
+
+.blog {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.shoppingcart {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#search-section form {
+    border-radius: 5px;
+    height: 50px;
+    width: 1000px;
+}
+
+/*Hero section*/
+.hero-image {
+    filter: brightness(75%);
+}
+
+.hero-text-h1 {
+    width: 30%;
+}
+
+.hero-text-p {
+    width: 29%;
+    margin-top: 100px;
+}
+
+.hero-btn {
+    width: 230px;
+    height: 50px;
+}
+
+/*Discover section*/
+.discover-section {
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.discover-section img {
+    border-radius: 10px;
+    filter: brightness(80%);
+}
+
+.discover-section figure img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.discover-section figure:hover img {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.discover-images1-2 {
+    display: grid;
+    grid-template-columns: 0.15fr 0.15fr 0.15fr;
+    column-gap: 15px;
+} 
+
+.discover-image1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.discover-image1 img {
+    width: 600px;
+}
+
+.discover-image2 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.discover-image2 img {
+    width: 570px;
+}
+
+.discover-images3-6 {
+    display: grid;
+    grid-template-columns: 0.15fr 0.15fr 0.15fr;
+    column-gap: 15px;
+    
+} 
+
+.discover-image3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.discover-image3 img {
+    width: 450px;
+}
+
+.discover-image4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.discover-image4 img {
+    width: 325px;
+}
+
+.discover-image5 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.discover-image5 img {
+    width: 400px;
+}
+
+.discover-image6 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.discover-image6 img {
+    width: 450px;
+}
+
+/*Best selling section*/
+.best-selling {
+    margin-top: 150px;
+    margin-left: 100px;
+}
+
+.card-body img {
+    width: 100px;
+}
+
+/*Customer rating total score section*/
+.webwinkel-trustmark-card {
+    margin-left: 100px;
+}
+
+.total-score-title {
+    width: 175px;
+}
+
+/*Customer rating swiper section*/
+.swiper-customer-rating {
+    margin-left: 74px;
+}
+
+/*Media block section*/
+.media-block-woman-image {
+    margin-left: 100px;
+    width: 500px;
+    border-radius: 10px;
+}
+
+.media-block-phone-image {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.media-block-text {
+    margin-left: 200px;
+}
+
+.media-block-btn {
+    height: 50px;
+}
+
+/*Testshop blog section*/
+.testshop-blog {
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.read-article {
+    color: orangered;
+}
+
+/*Footer section*/
+.footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 50px;
+    
+}
+
+.footer-newsletter {
+    padding-right: 100px;
+}
+
+.footer-newsletter input{
+    height: 50px;
+}
+
+.footer-trustmark img{
+    width: 75px;
+    border-radius: 3px;
+}
+
+.footer-payment-methods img{
+    width: 35px;
+    border-radius: 5px;
+}
